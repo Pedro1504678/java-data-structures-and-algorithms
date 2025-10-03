@@ -36,7 +36,7 @@ public class LinkedList {
     // 2 - LINKED LIST COM LENGTH 1
     // 3 - LINKED LIST COM LENGTH MAIOR QUE 1
     public Node removeLast() {
-            Node temp = head;
+        Node temp = head;
         Node pre = head;
         if (length == 0) return null;
         while (temp.next != null) {
@@ -54,6 +54,20 @@ public class LinkedList {
         }
         return temp;
     }
+
+    // PREPEND NODE
+    public void prepend(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+        length++;
+    }
+
 
     public void getHead() {
         System.out.println("Head: " + head.value);
