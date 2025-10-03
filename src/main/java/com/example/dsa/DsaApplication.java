@@ -9,7 +9,15 @@ public class DsaApplication {
         // prepend();
         // removeFirst();
         // getNodeIndex();
-        set();
+        // set();
+        insert();
+    }
+
+    private static void insert() {
+        LinkedList myLinkedList = new LinkedList(0);
+        myLinkedList.append(2);
+        myLinkedList.insert(1, 1);
+        myLinkedList.printList();
     }
 
     private static void set() {
