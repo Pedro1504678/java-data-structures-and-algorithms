@@ -1,5 +1,7 @@
 package com.example.dsa;
 
+import com.google.gson.Gson;
+
 public class LinkedList {
     private Node head;
     private Node tail;
@@ -79,6 +81,16 @@ public class LinkedList {
             tail = null;
         }
         return temp;
+    }
+
+    public Node get(int index) {
+        if (index < 0 || index >= length) return null;
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp;
+
     }
 
     public void getHead() {

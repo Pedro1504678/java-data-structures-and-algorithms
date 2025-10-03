@@ -7,7 +7,20 @@ public class DsaApplication {
 
     public static void main(String[] args) {
         // prepend();
-        removeFirst();
+        // removeFirst();
+
+        getNodeIndex();
+    }
+
+
+    private static void getNodeIndex() {
+        LinkedList myLinkedList = new LinkedList(0);
+        myLinkedList.append(1);
+        myLinkedList.append(2);
+        myLinkedList.append(3);
+
+        System.out.println("Node found at index 2: " + myLinkedList.get(2).value);
+        myLinkedList.printList();
     }
 
     private static void removeFirst() {
