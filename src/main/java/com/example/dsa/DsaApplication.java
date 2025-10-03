@@ -8,10 +8,19 @@ public class DsaApplication {
     public static void main(String[] args) {
         // prepend();
         // removeFirst();
-
-        getNodeIndex();
+        // getNodeIndex();
+        set();
     }
 
+    private static void set() {
+        LinkedList myLinkedList = new LinkedList(11);
+        myLinkedList.append(3);
+        myLinkedList.append(23);
+        myLinkedList.append(7);
+
+        myLinkedList.set(1, 4);
+        myLinkedList.printList();
+    }
 
     private static void getNodeIndex() {
         LinkedList myLinkedList = new LinkedList(0);
